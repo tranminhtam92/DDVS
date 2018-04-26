@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body{
+	background:#050301;
+	position:relative;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;}
+*{
+	padding:0px;
+	margin:0px;}
+a:link, a:visited, a:active{
+	color: rgb(38,15,14);
+    font-family: "U VF Bebas Neue";
+	text-decoration:none;}
+a:hover{
+	color:#691f1a;
+	text-decoration:none;}
+#bg { position: fixed; top: 0; left: 0; z-index:1; }
+.bgwidth { width: 100%; }
+.bgheight { height:100%; }
+
+.content{
+	position:relative;
+	z-index:4;}
+.height{
+	height:100vh;}
+
+.links {
+	margin-top: -150px;
+	text-align: center;
+	font-size: 24px;
+	color: rgb(38,15,14);
+    font-family: "U VF Bebas Neue";
+    }
+.button{
+	/*position:absolute;*/
+	bottom:-1px;}
+.button ul{
+	padding:0px;
+	margin:0px;}
+.button ul li{
+	list-style:none;
+	display:table-cell;}
+.button img{
+	vertical-align:baseline;}
+#menu {
+	background-image: url('../img/bg_bottom.png'); 
+	background-repeat: no-repeat; 
+	height: 82px; 
+	width:100%; 
+}
+/*-------------videp----------------*/
+.btn_video{
+	position:absolute;
+	top:60vh;
+	z-index:100;}
+button{
+	background:none;
+	border:none;} 

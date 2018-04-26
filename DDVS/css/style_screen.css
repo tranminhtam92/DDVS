@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*small mobile*/
+@media (max-width: 480px){
+#bg { position: fixed; top: 0; left:-50%; z-index:1; }
+.bottom {
+	background-image: url('../img/bg_bottom.png'); 
+	background-repeat: no-repeat; 
+	height: 50px; 
+	width:100%; 
+	position: fixed; 
+	bottom: 0px;
+}
+}
+/*mobile*/
+@media (max-width: 767px){
+.links{
+		font-size:14px;}
+
+.btn_left{
+	margin-right:-10px;}
+.btn_right{
+	margin-left:-10px;}
+.btn_video{
+	top:10vh;}
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width:991px){
+.btn_left{
+	margin-right:-15px;}
+.btn_right{
+	margin-left:-15px;}
+#bg { position: fixed; top: 0; left:auto; right:-40%; z-index:1; }
+}
+/*pc*/
+@media (min-width: 992px){
+.btn_left{
+	margin-right:-20px;}
+.btn_right{
+	margin-left:-20px;}
+#bg { position: fixed; top: 0; left:auto; right:-30%; z-index:1; }
+}
+/*Large*/
+@media (min-width: 1024px){
+#bg { position: fixed; top: 0; left: 0; z-index:1; }
+
+}
+/*Extra*/
+@media (min-width: 1200px){
+
+}

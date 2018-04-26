@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/ico" 
+      href="img/appicon.png" />
+<title>Đại Đương Võ Lâm</title>
+<meta name="keywords" content="webgame miễn phí Game miễn phí webgame hay 2015">
+<meta name="description" content="Webgame chiến thuật hay nhất năm 2013 bối cảnh xung quanh tam đại nhân vật thời Tam Quốc - Chơi Webgame chiến thuật Ngọa Long không cần cài đặt">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/default.css" />
+<!-- <link rel="stylesheet" href="css/style_screen.css" /> -->
+<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+</head>
+<body>
+<div class = "wrap">
+  <div class="header">
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
+    <div class="item">
+      <div class="links"><a href="http://ddvl.talktv.vn/index.html">TRANG CHỦ</a> | <a href="https://hotro.talktv.vn/">HỖ TRỢ</a> | <a href="https://www.facebook.com/pg/ddvl.talktv.vn">FANPAGE</a></div>
+    </div>
+    <div class = "picture_text">
+      <img src="img/text.png">
+    </div>
+  </div>
+  <div class="content">
+    <div id="menu">
+      <div class="list_button">
+              <ul>
+                <li class="btn_left">
+                  <a href="#loantheanhhung">
+                    <img class="img_loanthe" src="img/btn_loantheanhhung.png" 
+                    
+                        border="0" alt="">
+                  </a>
+                </li>
+                <li class="btn_mid">
+                  <a href="#chuhauphantranh">
+                    <img class="img_chuhau" src="img/btn_chuhau.png"
+                        
+                        border="0" alt="" >
+                  </a>
+                </li>
+                <li class="btn_right">
+                  <a href="#vuonggiathienha">
+                    <img class="img_vuonggia" src="img/btn_vuonggia.png"
+                        
+                        border="0" alt="">
+                  </a>
+                </li>
+              </ul>
+          </div>
+    </div>
+    <div id="loantheanhhung" class="post">
+      <iframe src="http://ddvl.talktv.vn/chien-truong-quoc-chien-458.html" scrolling="yes" ></iframe>
+    </div>
+    <div id="chuhauphantranh" class="post">
+      <iframe src="http://ddvl.talktv.vn/hoat-dong-tang-kiem-linh-444.html" scrolling="yes" ></iframe>
+    </div>
+    <div id="vuonggiathienha" class="post">
+      <iframe src="http://ddvl.talktv.vn/chien-truong-quoc-chien-458.html" scrolling="yes"></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/html5lightbox.js"></script> 
+<script src="http://stc-id.zing.vn/widget/js/openwidget2.js?apikey=848dfc7c1dfe4da3b8dd3c58f8d34be8&type=2" type="text/javascript"></script>
+
+<style type="text/css">
+  .button{
+    height: auto;
+  }
+  .menu_btn{
+    bottom: 0px
+  }
+  .bgwidth {
+     background-size: cover;
+  }
+  ul {
+        width:100%;
+        height: 80px;
+        text-align:center;
+        padding-top: 2px;
+}
+  li {
+      height:80px; 
+      display:inline-block;
+      color:white;
+  }
+  .logo img {
+    margin-left: 430px;
+  }
+  .picture_text img{
+    margin-left: 1100px;
+    margin-top: 250px;
+  }
+  .bai_viet {
+    height: auto;
+    width: 100%
+  }
+  .header{
+    background-image: url("img/bg.jpg");
+    width: 1920px;
+    height: 870px;
+  }
+  .post{
+    background-color: #ffffff;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .loantheanhhung {
+  padding-top: 102px;
+}
+  iframe{
+    width: 100%;
+    height: 2000px;
+  }
+  li img {
+    height: 80px
+  }
+/*  .links, .links a {
+    font-size: 24px;
+    color: rgb(38,15,14);
+    font-family: "U VF Bebas Neue";
+  }*/
+</style>
+<script type="text/javascript">
+  window.onscroll = function() {myFunction()};
+
+  var header = $("#menu");
+  var sticky = header.offset().top
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.addClass("sticky");
+    console.log(">")
+  } else {
+    console.log("<")
+    header.removeClass("sticky");
+  }
+}
+  $(".img_chuhau").attr("src","img/btn_chuhau_click.png");
+  $(".btn_left").click(function(){
+    $("#loantheanhhung").show()
+    $("#chuhauphantranh").hide()
+    $("#vuonggiathienha").hide()
+    $(".img_loanthe").attr("src","img/btn_loanthe_click.png");
+    $(".img_chuhau").attr("src","img/btn_chuhau.png");
+    $(".img_vuonggia").attr("src","img/btn_vuonggia.png");
+  })
+  $(".btn_mid").click(function(){
+    $("#loantheanhhung").hide()
+    $("#chuhauphantranh").show()
+    $("#vuonggiathienha").hide()
+    $(".img_loanthe").attr("src","img/btn_loantheanhhung.png");
+    $(".img_chuhau").attr("src","img/btn_chuhau_click.png");
+    $(".img_vuonggia").attr("src","img/btn_vuonggia.png");
+  })
+  $(".btn_right").click(function(){
+    $("#loantheanhhung").hide()
+    $("#chuhauphantranh").hide()
+    $("#vuonggiathienha").show()
+    $(".img_loanthe").attr("src","img/btn_loantheanhhung.png");
+    $(".img_chuhau").attr("src","img/btn_chuhau.png");
+    $(".img_vuonggia").attr("src","img/btn_vuonggia_click.png");
+  })
+</script>
+<script type="text/javascript">
+  function bindLanding(quickplayUrl, quickplayQuery, noReload) {  
+    // Auto redirect after user login success and HAVE VNGAUTH COOKING IN DOMAIN `.360game.vn`
+    //if(config360game.zing_account){
+    //  var bypassQuery = getQueryString();
+    //  if(quickplayQuery)
+    //    bypassQuery = bypassQuery ? bypassQuery + '&' + quickplayQuery : '?' + quickplayQuery;
+    //  var url = quickplayUrl + bypassQuery;
+    //  url = removeParam(url, 'sid');
+    //  url = removeParam(url, 'err');
+      //window.location.href = url;
+    //  return false;
+    //};
+
+    window.cb = function (cbdata, acn, zid, uin, autcode, obj) {
+      if (zid > 0)
+      {
+        if(noReload)
+        {
+          var bypassQuery = getQueryString();
+          if(quickplayQuery)
+            bypassQuery = bypassQuery ? bypassQuery + '&' + quickplayQuery : '?' + quickplayQuery;
+          var url = quickplayUrl + bypassQuery;
+          url = removeParam(url, 'sid');
+          url = removeParam(url, 'err');
+          window.location.href = url;
+        }
+        else
+        {
+          var url = window.location.href;
+          url = url.replace(/#/g, '');
+          url = removeParam(url, 'sid');
+          url = removeParam(url, 'err');
+          //url = addParam(url, '_svid', 1);
+          window.location.href = url;
+        }
+      }
+    };
+
+    window.zAsyncInit = function () {
+      zmeOpenWidget.init({
+        apikey: "848dfc7c1dfe4da3b8dd3c58f8d34be8",
+        callback: 'cb',
+        pid: '137',
+        tpl: "5",
+        css: 'http://img.zing.vn/products/vendor/general/widget-login/css/login_quickreg_1.05.css'
+      });
+    };
+
+    function getParam(name, url) {
+      if (!url) 
+        url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
+      if (!results) 
+        return null;
+      if (!results[2]) 
+        return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function addParam(url, param, value) {
+      var a = document.createElement('a'), regex = /(?:\?|&|&)+([^=]+)(?:=([^&]*))*/gi;
+      var params = {}, match, str = [];
+      a.href = url;
+      while (match = regex.exec(a.search)){
+        if (encodeURIComponent(param) != match[1])
+          str.push(match[1] + (match[2] ? "=" + match[2] : ""));
+      }
+      str.push(encodeURIComponent(param) + (value ? "=" + encodeURIComponent(value) : ""));
+      a.search = str.join("&");
+      return a.href;
+    }
+
+    function removeParam(url, param) {
+      var urlparts = url.split('?');   
+      if (urlparts.length >= 2) {
+        var prefix = encodeURIComponent(param) + '=';
+        var pars = urlparts[1].split(/[&;]/g);
+        for (var i= pars.length; i-- > 0;) {  
+          if (pars[i].lastIndexOf(prefix, 0) !== -1) 
+            pars.splice(i, 1);
+        }
+
+        url= urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : "");
+        return url;
+      } else
+        return url;
+    }
+
+    function getQueryString(url){
+      if (!url) 
+        url = window.location.href;
+
+      var queryString = '';
+      if(url.indexOf('?') != -1) {
+        var index = url.indexOf('?');
+        queryString = url.substr(index);
+      }
+
+      return queryString;
+    }
+
+    // For html5 canvas or embed flash
+    window.landing_entergame = function() {
+      zmeOpenWidget.doLogin('cb');
+    };
+
+    return true;
+  };  
+</script>
+<!-- <script>
+  $(window).load(function() {    
+
+  var theWindow        = $(window),
+      $bg              = $("#bg"),
+      aspectRatio      = $bg.width() / $bg.height();
+                    
+  function resizeBg() {
+    
+    if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+        $bg
+          .removeClass()
+          .addClass('bgheight');
+    } else {
+        $bg
+          .removeClass()
+          .addClass('bgwidth');
+    }
+          
+  }
+                            
+  theWindow.resize(resizeBg).trigger("resize");
+
+});
+</script> -->
+</body>
+</html>
